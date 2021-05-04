@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oliver Hemsley | Home</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="scripts/scroll.js"></script>
+    <script src="scripts/navbar.js"></script>
 </head>
 
 <body>
@@ -17,7 +19,7 @@
 
             <nav>
                 <ul class="nav-items">
-                    <li class="current"><a href="#">Home</a></li>
+                    <li id="current"><a href="#">Home</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact Me</a></li>
                 </ul>
@@ -28,6 +30,7 @@
     <section class="hero">
         <div class="container">
             <div class="left-col">
+                <img id="hero-back-img" src="img/circuit.svg" alt="Circuit Background Image">
                 <p class="subhead">Hi, I'm</p>
                 <p class="name">Oliver</p>
                 <p class="subhead">And I'm a <span>Cyber Security Student</span></p>
@@ -36,6 +39,7 @@
                     <a href="portfolio.html">View Portfolio</a>
                 </div>
             </div>
+
             <div class="right-col">
                 <img src="img/Security_Two Color 1.svg" alt="Cyber Security Image">
             </div>
@@ -43,7 +47,7 @@
     </section>
 
     <section class="fold">
-        <img class="fold-wave" src="img/fold-wave.svg" alt="fold-image">
+        <img id="white_div" class="fold-wave" src="img/fold-wave.svg" alt="fold-image">
         <img class="fold-arrow" src="img/arrow.svg" alt="fold-arrow" onclick="scrollToAnchor()">
     </section>
     <div class="site-content">

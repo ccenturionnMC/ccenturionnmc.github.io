@@ -4,6 +4,7 @@
   --red: #F05D5E;
   --white: #E7ECEF;
   --blue: #0F7173;
+  --black: #272932;
 }
 
 * {
@@ -28,7 +29,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 3em 15em;
+  width: 85em;
+  margin: auto;
+  padding: 3em 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -57,6 +60,40 @@ body {
   color: var(--white);
 }
 
+.navbar .nav-items li a:hover {
+  color: var(--red);
+}
+
+.navbar .nav-items #current {
+  border-bottom-style: solid;
+  border-color: var(--red);
+  border-width: 2px;
+}
+
+.nav_dark {
+  background-color: #272932;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav_dark .nav-container {
+  padding: 1em 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav_light {
+  background-color: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav_light .nav-container {
+  padding: 3em 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .hero {
   position: fixed;
   top: 0;
@@ -66,10 +103,12 @@ body {
 }
 
 .hero .container {
-  margin: 7em 15em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 85em;
+  margin: auto;
+  padding: 7em 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -111,8 +150,21 @@ body {
   font-weight: 500;
 }
 
+.hero .left-col .hero-cta a:hover {
+  background-color: #0c5c5e;
+}
+
+.hero .left-col #hero-back-img {
+  position: absolute;
+  width: 160em;
+  z-index: -50;
+  margin-left: -75em;
+  margin-top: -60em;
+}
+
 .hero .right-col {
   padding-top: 3em;
+  margin-right: -5em;
 }
 
 .fold {
@@ -131,6 +183,10 @@ body {
   left: 0;
   right: 0;
   margin: auto;
+}
+
+.fold .fold-arrow:hover {
+  cursor: pointer;
 }
 
 .site-content {
