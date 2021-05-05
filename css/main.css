@@ -157,7 +157,7 @@ body {
 }
 
 .hero .left-col .hero-cta a {
-  background: linear-gradient(135deg, #0c305e 0%, #0c5c5e 50%, #149c9d 100%);
+  background: linear-gradient(135deg, #149c9d 0%, #0c5c5e 30%, #0c305e 100%);
   background-size: 200% 100%;
   padding: 0.5em 2em;
   border-radius: 45px;
@@ -222,9 +222,6 @@ body {
 }
 
 .site-content .content-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
   width: 100%;
   max-width: 85em;
@@ -234,5 +231,75 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.site-content .content-container .profile-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 100px;
+}
+
+.site-content .content-container .profile-pic .circle {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  min-width: 15px;
+  background-color: var(--black);
+  border-radius: 50%;
+  margin: auto 0;
+}
+
+.site-content .content-container .profile-pic .avatar-circle {
+  display: inline-block;
+  background-color: #C9C9C9;
+  border-radius: 50%;
+  overflow: hidden;
+  min-width: 190px;
+  min-height: 190px;
+}
+
+.site-content .content-container .profile-pic .avatar-circle img {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.site-content .content-container .aboutme {
+  width: 100%;
+  max-width: 60em;
+  margin: auto;
+  margin-top: 5em;
+}
+
+.site-content .content-container .aboutme .aboutme-title {
+  position: relative;
+  font-family: 'Poppins';
+  font-weight: 100;
+  font-size: 1.2em;
+  color: var(--white);
+  background: #f05d5e;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(43%, #f05d5e), to(#f2a510));
+  background: linear-gradient(180deg, #f05d5e 43%, #f2a510 100%);
+  width: 5em;
+  border-radius: 45px;
+  text-align: center;
+  padding: 10px 20px;
+  margin-left: 4em;
+  z-index: 2;
+}
+
+.site-content .content-container .aboutme p {
+  position: relative;
+  margin-top: -25px;
+  background-color: var(--white);
+  padding: 4em;
+  border-radius: 20px;
+  -webkit-filter: drop-shadow(7px 7px 7px #00000069) drop-shadow(-7px -7px 7px #ffffff);
+          filter: drop-shadow(7px 7px 7px #00000069) drop-shadow(-7px -7px 7px #ffffff);
+  z-index: 1;
 }
 /*# sourceMappingURL=main.css.map */

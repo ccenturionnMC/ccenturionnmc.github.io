@@ -141,7 +141,7 @@ body {
     .hero-cta {
       margin-top: 3em;
       a {
-        background: linear-gradient(135deg, rgba(12,48,94,1) 0%, rgba(12,92,94,1) 50%, rgba(20,156,157,1) 100%);
+        background: linear-gradient(135deg, rgba(20,156,157,1) 0%, rgba(12,92,94,1) 30%, rgba(12,48,94,1) 100%);
         background-size: 200% 100%;
         padding: 0.5em 2em;
         border-radius: 45px;
@@ -164,7 +164,7 @@ body {
       width: 160em;
       z-index: -50;
       margin-left: -75em;
-      margin-top: -60em
+      margin-top: -60em;
     }
   }
 
@@ -206,7 +206,6 @@ body {
   width: 100%;
 
   .content-container {
-    display: flex;
     position: relative;
     width: 100%;
     max-width: 85em;
@@ -214,6 +213,77 @@ body {
     padding: 3em 0;
     padding-bottom: 100em;
     justify-content: space-between;
+    //background-color: #F05D5E;
+
+    .profile-pic {
+      display: flex;
+      width: 100%;
+      //background-color: #0F7173;
+      justify-content: space-between;
+      margin-top: 100px;
+
+      .circle {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        min-width: 15px;
+        background-color: var(--black);
+        border-radius: 50%;
+        margin: auto 0;
+      }
+  
+      .avatar-circle {
+        display: inline-block;
+        background-color: #C9C9C9;
+        border-radius: 50%;
+        overflow: hidden;
+        min-width: 190px;
+        min-height: 190px;
+  
+        img {
+          transform: translateY(10px)
+        }
+    }
+
+    
+    }
+
+    .aboutme {
+      width: 100%;
+      max-width: 60em;
+      margin: auto;
+      margin-top: 5em;
+
+      .aboutme-title {
+        position: relative;
+        font-family: 'Poppins';
+        font-weight: 100;
+        font-size: 1.2em;
+        color: var(--white);
+        background: rgb(240,93,94);
+        background: linear-gradient(180deg, rgba(240,93,94,1) 43%, rgba(242,165,16,1) 100%);
+        width: 5em;
+        border-radius: 45px;
+        text-align: center;
+        padding: 10px 20px;
+        margin-left: 4em;
+        z-index: 2;
+      }
+
+      p {
+        position: relative;
+        margin-top: -25px;
+        background-color: var(--white);
+        padding: 4em;
+        border-radius: 20px;
+        filter: 
+          drop-shadow(7px 7px 7px #00000069) drop-shadow(-7px -7px 7px #ffffff);
+
+        z-index: 1;
+      }
+    }
   }
+
+
 }
 
