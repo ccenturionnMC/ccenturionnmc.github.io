@@ -5,7 +5,7 @@ $(document).ready(function () {
         var menu_pos = $('.navbar').offset().top;
         var scroll = $(window).scrollTop();
 
-        if (menu_pos > light_pos) {
+        if (menu_pos > (light_pos / 5)) {
             $('.navbar').addClass('nav_dark');
             $('.navbar').removeClass('nav_light');
         }
