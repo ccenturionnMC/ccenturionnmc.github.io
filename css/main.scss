@@ -14,7 +14,6 @@
 }
 
 body {
-  background: #272932;
   font-family: 'Poppins';
 }
 
@@ -40,6 +39,12 @@ body {
     font-weight: bold;
     font-size: 1.5em;
     color: var(--red);
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: var(--white);
+      transition: color 0.2s ease-in-out;
+    }
   }
   
   .nav-items {
@@ -55,9 +60,11 @@ body {
       font-weight: regular;
       font-size: 1.2em;
       color: var(--white);
+      transition: color 0.2s ease-in-out;
 
       &:hover {
         color: var(--red);
+        transition: 0.2s ease-in-out;
       }
     }
 
@@ -92,12 +99,14 @@ body {
 }
 
 .hero {
+  background: linear-gradient(151deg, rgba(39,41,50,1) 50%, rgba(64,27,27,1) 100%);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: -100;
   padding: 0 2em;
+  padding-bottom: 10em;
 
   .container {
     display: flex;
@@ -131,9 +140,9 @@ body {
 
     .hero-cta {
       margin-top: 3em;
-
       a {
-        background-color: var(--blue);
+        background: linear-gradient(135deg, rgba(12,48,94,1) 0%, rgba(12,92,94,1) 50%, rgba(20,156,157,1) 100%);
+        background-size: 200% 100%;
         padding: 0.5em 2em;
         border-radius: 45px;
         font-family: 'Poppins';
@@ -141,9 +150,11 @@ body {
         text-decoration: none;
         color: var(--white);
         font-weight: 500;
+        transition: background 0.4s ease-in-out;
 
         &:hover {
-          background-color: #0c5c5e;
+          background-position: 100% 0;
+          transition: 0.4s ease-in-out;
         }
       }
     }

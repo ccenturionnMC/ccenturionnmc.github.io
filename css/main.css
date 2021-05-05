@@ -13,7 +13,6 @@
 }
 
 body {
-  background: #272932;
   font-family: 'Poppins';
 }
 
@@ -44,6 +43,14 @@ body {
   font-weight: bold;
   font-size: 1.5em;
   color: var(--red);
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar .nav-logo:hover {
+  color: var(--white);
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 .navbar .nav-items {
@@ -60,10 +67,14 @@ body {
   font-weight: regular;
   font-size: 1.2em;
   color: var(--white);
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 .navbar .nav-items li a:hover {
   color: var(--red);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .navbar .nav-items #current {
@@ -97,12 +108,14 @@ body {
 }
 
 .hero {
+  background: linear-gradient(151deg, #272932 50%, #401b1b 100%);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: -100;
   padding: 0 2em;
+  padding-bottom: 10em;
 }
 
 .hero .container {
@@ -144,7 +157,8 @@ body {
 }
 
 .hero .left-col .hero-cta a {
-  background-color: var(--blue);
+  background: linear-gradient(135deg, #0c305e 0%, #0c5c5e 50%, #149c9d 100%);
+  background-size: 200% 100%;
   padding: 0.5em 2em;
   border-radius: 45px;
   font-family: 'Poppins';
@@ -152,10 +166,14 @@ body {
   text-decoration: none;
   color: var(--white);
   font-weight: 500;
+  -webkit-transition: background 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out;
 }
 
 .hero .left-col .hero-cta a:hover {
-  background-color: #0c5c5e;
+  background-position: 100% 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .hero .left-col #hero-back-img {
