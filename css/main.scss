@@ -106,7 +106,7 @@ body {
   right: 0;
   z-index: -100;
   padding: 0 2em;
-  padding-bottom: 10em;
+  padding-bottom: 30em;
 
   .container {
     display: flex;
@@ -177,7 +177,7 @@ body {
 .fold {
   display: block;
   position: relative;
-  margin-top: 100vh;
+  margin-top: calc(min(100vh, 100em));
   transform: translateY(-100px);
 
   .fold-wave {
