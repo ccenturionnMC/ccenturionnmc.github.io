@@ -201,7 +201,7 @@ body {
 }
 
 .site-content {
-  position: absolute;
+  position: relative;
   background: var(--white);
   width: 100%;
 
@@ -284,6 +284,44 @@ body {
     }
   }
 
+
+}
+
+footer {
+  position: relative;
+  background-color: var(--blue);
+  width: 100%;
+
+  .footer-container {
+    position: relative;
+    width: 100%;
+    max-width: 85em;
+    margin: 0 auto;
+    padding: 3em 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .links {
+    
+    a {
+      text-decoration: none;
+      color: black;
+      display: block;
+    }
+    
+  }
+
+  .socials {
+
+    i {
+      font-size: 2em;
+    }
+
+  }
 
 }
 

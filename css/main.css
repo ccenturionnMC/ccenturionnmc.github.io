@@ -216,7 +216,7 @@ body {
 }
 
 .site-content {
-  position: absolute;
+  position: relative;
   background: var(--white);
   width: 100%;
 }
@@ -301,5 +301,38 @@ body {
   -webkit-filter: drop-shadow(7px 7px 7px #00000069) drop-shadow(-7px -7px 7px #ffffff);
           filter: drop-shadow(7px 7px 7px #00000069) drop-shadow(-7px -7px 7px #ffffff);
   z-index: 1;
+}
+
+footer {
+  position: relative;
+  background-color: var(--blue);
+  width: 100%;
+}
+
+footer .footer-container {
+  position: relative;
+  width: 100%;
+  max-width: 85em;
+  margin: 0 auto;
+  padding: 3em 0;
+}
+
+footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .links a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+footer .socials i {
+  font-size: 2em;
 }
 /*# sourceMappingURL=main.css.map */
